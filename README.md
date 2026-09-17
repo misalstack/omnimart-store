@@ -1,122 +1,72 @@
 <div id='top' align="center">
 
-![TecShop](public/images/tecshop-logo.svg)
+# 🛒 OmniMart
 
-An E-commerce site template with a techy red and black theme, implemented with [Next.js](https://nextjs.org/) and [TypeScript](https://www.typescriptlang.org/). Styled with [TailwindCSS](https://tailwindcss.com/). This is a portfolio project by MisalStack, published as an open-source project. Feel free to explore it, and if you need help, ask me. I would respond as soon as possible.
-<p>To support me, please create <strong>Pull request</strong> and give <strong>star⭐</strong> to this repository.<br/>
-   I appreciate your support in advance. ❤</p>
+An All-in-One Modern E-Commerce Platform built with **Next.js**, **TypeScript**, **Redux Toolkit**, and **Tailwind CSS**. Integrated with **Sanity.io** as a headless CMS database.
+
+<p>
+  <a href="https://online-shop-main-three.vercel.app"><strong>View Live Demo »</strong></a>
+</p>
 
 <p>
 
-![GitHub top language](https://img.shields.io/github/languages/top/MisalStack/tecshop)&nbsp;
-![GitHub last commit](https://img.shields.io/github/last-commit/MisalStack/tecshop)&nbsp;
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/MisalStack/tecshop)&nbsp;
-![GitHub Repo stars](https://img.shields.io/github/stars/MisalStack/tecshop?color=yellow)&nbsp;
-![GitHub forks](https://img.shields.io/github/forks/MisalStack/tecshop)
+![Next.js](https://img.shields.io/badge/-Next.js-05122A?style=for-the-badge&logo=next.js)&nbsp;
+![TypeScript](https://img.shields.io/badge/-TypeScript-05122A?style=for-the-badge&logo=typescript)&nbsp;
+![Tailwind CSS](https://img.shields.io/badge/-TailwindCSS-05122A?style=for-the-badge&logo=tailwindCSS&logoColor=06B6D4)&nbsp;
+![Redux Toolkit](https://img.shields.io/badge/-Redux-05122A?style=for-the-badge&logo=redux&logoColor=764ABC)&nbsp;
+![Sanity](https://img.shields.io/badge/-Sanity.io-05122A?style=for-the-badge&logo=sanity&logoColor=F03E2F)
 
 </p>
 
 <p>
 
 [Technologies](#technologies) •
-[Demo](#demo) •
 [Features](#features) •
-[Pages](#pages) •
-[Getting started](#getting-started) •
-[Contributing](#contributing) •
-[Contact Me](#contact-me)
-  
+[Categories](#categories) •
+[Getting Started](#getting-started) •
+[Contributing](#contributing)
+
 </p>
 </div>
 
-## 🔧Technologies
-![React](https://img.shields.io/badge/-React-05122A?style=for-the-badge&logo=react)&nbsp;
-![TypeScript](https://img.shields.io/badge/-TypeScript-05122A?style=for-the-badge&logo=typescript)&nbsp;
-![Next.js](https://img.shields.io/badge/-Next.js-05122A?style=for-the-badge&logo=next.js)&nbsp;
-![Redux](https://img.shields.io/badge/-Redux-05122A?style=for-the-badge&logo=redux&logoColor=764ABC)&nbsp;
-![Tailwind CSS](https://img.shields.io/badge/-TailwindCSS-05122A?style=for-the-badge&logo=tailwindCSS&logoColor=06B6D4)
+---
 
+## 🔧 Technologies
 
-## ✨Demo
-You can visit and explore the TecShop template - a techy e-commerce experience with red and black theme.
+* **Framework:** Next.js (React)
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS
+* **State Management:** Redux Toolkit
+* **Headless CMS / Database:** Sanity.io
 
-## 🔥Features
-* Using Redux toolkit as state manager
-* Using [Sanity.io](https://www.sanity.io/) as database
-* Fully responsive
-* Multi-language (EN-FA)
-* Multi-theme (Dark/Light)
+---
 
-## 📃Pages
-* Main (index)
-* Login/SignUp
-* Products List
-* Product Details
-* Cart
-* Favorites
-* About
-<p align="right">(<a href="#top">BACK TO TOP 🔝</a>)</p>
+## ✨ Features
 
-## 🚀Getting Started
-1. Sign up in [sanity.io](https://www.sanity.io/) and get `projectId` and `token`
+* **Tech & Mega Deals:** Promotional banners and dynamic sales sections.
+* **Category Browsing:** Seamless filtering across multiple departments.
+* **Brand Showcase:** Interactive partner and popular brand slider.
+* **Shopping Cart & Authentication:** Full cart management and user login/signup capabilities.
+* **Responsive & Dynamic:** Fully optimized across mobile, tablet, and desktop views.
+* **Multi-language & Multi-theme Support:** Toggle light/dark modes and supported languages.
 
-> **Warning**&nbsp;
-> To work with sanity, people who live in Iran should use a `VPN`.
+---
 
-2. Clone the project
-  ```bash
-  git clone https://github.com/MisalStack/tecshop.git
-  ```
-3. Install project dependencies
-  ```bash
-  npm install
-  #or
-  yarn add
-  ```
-4. Enter your `projectId` into `lib/client.ts`
-5. Add `.env` file to root project, and enter your `token` into `.env`
-  ```js
-  NEXT_PUBLIC_SANITY_TOKEN= [ENTER YOUR TOKEN]
-  ```
-6. Go to sanity_onlineshop folder and open new terminal in this path, then
-  ```bash
-  sanity start
-  ```
-open `http://localhost:3333` and enter products.
- 
-7. Run the development server in project root path:
+## 🛍️ Categories
 
-  ```bash
-  npm run dev
-  # or
-  yarn dev
-  ```
+* 📱 **Electronics & Tech:** Smartphones, laptops, and modern gadgets
+* 👗 **Clothing & Apparel:** Fashion and apparel from top brands
+* 💄 **Beauty & Care:** Skin-friendly cosmetics and daily essentials
+* 🏋️ **Sports & Fitness:** Durable gear and fitness equipment
+* 🛋️ **Home & Living:** Modern furniture and kitchenware
+* 🧸 **Kids & Toys:** Safe, educational toys for all ages
+* 📚 **Books & Office:** Notebooks, stationery, and office supplies
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## 🚀 Getting Started
 
-## 🤝Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-
-
-## 💬Contact Me
-  <p>
-    <a href="https://github.com/MisalStack"><img src="https://img.shields.io/badge/-GitHub-181717?style=flat&logo=GitHub&logoColor=white"/></a>
-  </p>
-  
-  <hr/>
-  
-  <p align="right">(<a href="#top">BACK TO TOP🔝</a>)</p>
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/MisalStack/tecshop.git](https://github.com/MisalStack/tecshop.git)
+   cd tecshop
