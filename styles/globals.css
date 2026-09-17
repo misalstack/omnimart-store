@@ -1,0 +1,233 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Theme Colors: Navy Blue & Gold */
+    --color-primary: 0, 0, 128; /* #000080 - Navy Blue */
+    --color-secondary: 212, 175, 55; /* #D4AF37 - Gold Accent */
+
+    /* Light/Cream Background Colors */
+    --color-bg: 250, 250, 253; /* Soft Light BG */
+    --color-bg-side: 245, 245, 220; /* Warm Cream Card BG */
+    --color-bg-black: 255, 255, 255;
+
+    /* Category Background Cards */
+    --digital-category-bgc: #e0e7ff;
+    --fashion-category-bgc: #fef3c7;
+    --beauty-category-bgc: #fce7f3;
+    --sport-category-bgc: #dcfce7;
+    --house-category-bgc: #ffedd5;
+    --toy-category-bgc: #f3e8ff;
+    --stationery-category-bgc: #e0f2fe;
+
+    /* Text Colors for Light BG */
+    --color-text-base: 15, 23, 42; /* Dark Charcoal for crisp reading */
+    --color-text-muted: 100, 116, 139; /* Muted Slate Gray */
+    --color-text-side: 30, 41, 59;
+    --font-family: iranyekan, "IRANSans", "Tahoma";
+  }
+
+  .dark {
+    /* Dark Theme Setup */
+    --color-primary: 30, 64, 175; /* Royal Blue in Dark Mode */
+    --color-secondary: 212, 175, 55; /* Gold */
+    --color-bg: 15, 23, 42; /* Midnight Slate BG */
+    --color-bg-side: 30, 41, 59; /* Lighter Slate for Cards */
+    --digital-category-bgc: #1e1b4b;
+    --fashion-category-bgc: #312e81;
+    --beauty-category-bgc: #3730a3;
+    --sport-category-bgc: #1e3a8a;
+    --house-category-bgc: #172554;
+    --toy-category-bgc: #2e1065;
+    --stationery-category-bgc: #1e293b;
+
+    --color-text-base: 248, 250, 252;
+    --color-text-muted: 148, 163, 184;
+    --color-text-side: 255, 255, 255;
+  }
+
+  html[dir="ltr"] {
+    --font-family: "Poppins", "Roboto", "sans-serif";
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: rgb(var(--color-bg));
+  color: rgb(var(--color-text-base));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: bold;
+  src: url("/fonts/woff/iranyekanwebbold.woff") format("woff"),
+    url("/fonts/ttf/iranyekanwebbold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 100;
+  src: url("/fonts/woff/iranyekanwebthin.woff") format("woff"),
+    url("/fonts/ttf/iranyekanwebthin.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/woff/iranyekanweblight.woff") format("woff"),
+    url("/fonts/ttf/iranyekanweblight.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/woff/iranyekanwebregular.woff") format("woff"),
+    url("/fonts/ttf/iranyekanwebregular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/woff/iranyekanwebmedium.woff") format("woff"),
+    url("/fonts/ttf/iranyekanwebmedium.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/woff/iranyekanwebextrabold.woff") format("woff"),
+    url("/fonts/ttf/iranyekanwebextrabold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 850;
+  src: url("/fonts/woff/iranyekanwebblack.woff") format("woff"),
+    url("/fonts/ttf/iranyekanwebblack.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/woff/iranyekanwebextrablack.woff") format("woff"),
+    url("/fonts/ttf/iranyekanwebextrablack.ttf") format("truetype");
+  font-display: swap;
+}
+
+.slick-dots li button::before {
+  font-size: 12px !important;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.45 !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  opacity: 9 !important;
+  content: "" !important;
+}
+
+@media (min-width: 1024px) {
+  .slick-dots li button:before {
+    font-size: 12px;
+  }
+  .slick-dots {
+    padding-bottom: 40px !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(var(--color-bg));
+}
+
+/* Scrollbar Thumb Navy Blue Color */
+::-webkit-scrollbar-thumb {
+  background-color: #000080;
+  border-radius: 100vw;
+}
+
+/* input */
+
+input,
+select {
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+}
+
+input:focus,
+select:focus {
+  background-color: transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+::placeholder {
+  color: #64748b;
+  font-size: 14px;
+}
+/* Top Loading Bar & Spinner Color to Navy Blue */
+#nprogress .bar {
+  background: #1E3A8A !important; /* Main Loading Line */
+  height: 3px !important;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #1E3A8A, 0 0 5px #1E3A8A !important;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: #1E3A8A !important; /* Loading Circle/Spinner */
+  border-left-color: #1E3A8A !important;
+}
+.bg-palette-primary {
+  color: #ffffff !important;
+}
