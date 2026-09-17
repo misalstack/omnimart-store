@@ -17,16 +17,6 @@ An All-in-One Modern E-Commerce Platform built with **Next.js**, **TypeScript**,
 ![Sanity](https://img.shields.io/badge/-Sanity.io-05122A?style=for-the-badge&logo=sanity&logoColor=F03E2F)
 
 </p>
-
-<p>
-
-[Technologies](#technologies) •
-[Features](#features) •
-[Categories](#categories) •
-[Getting Started](#getting-started) •
-[Contributing](#contributing)
-
-</p>
 </div>
 
 ---
@@ -64,9 +54,3 @@ An All-in-One Modern E-Commerce Platform built with **Next.js**, **TypeScript**,
 
 ---
 
-## 🚀 Getting Started
-
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/MisalStack/tecshop.git](https://github.com/MisalStack/tecshop.git)
-   cd tecshop
